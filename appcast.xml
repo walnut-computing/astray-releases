@@ -9,6 +9,33 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.8.2</title>
+            <pubDate>Sun, 06 Sep 2026 20:13:35 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>0.8.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.8.2
+
+## What changed
+
+- Fixed Refresh preview holding control after taking a snapshot and blocking the next AI task. Preview requests now return their temporary control when they finish, fail, or are cancelled.
+- Refreshing a preview preserves control held by an existing file transfer or AI task. Delayed preview responses no longer overwrite a newer task or another Mac's preview.
+- Updated the Control menu and preview guidance to consistently use Refresh Preview.
+
+## Install or update
+
+- In Astray 0.7.0 or later, choose **Astray → Check for Updates…**.
+- For a new installation, download `Astray-0.8.2.zip`, unzip it, and move `Astray.app` to Applications. Replace the existing app instead of merging its contents.
+- Requires macOS 14 or later. The app includes Apple Silicon and Intel binaries.
+
+This release is signed with Developer ID, notarized by Apple, and includes a stapled notarization ticket. Update metadata and downloads are also signed with Sparkle's Ed25519 key.
+
+Existing pairing and app settings are retained.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.8.2/Astray-0.8.2.zip" length="78609604" type="application/octet-stream" sparkle:edSignature="09MvIOrOTRmFs6TXTdqJUeSklcqlrfRRzhpOUE8dQYKZjolMGmt+4daSykpoYGauRftbgChdKsFCEJxQCXM0CQ=="/>
+        </item>
+        <item>
             <title>0.8.1</title>
             <pubDate>Sun, 06 Sep 2026 19:33:05 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -102,6 +129,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: HC8R+riXmmdQm5g+Qur+vvyH9v0vOqleFlbd6b/9d8+INUL+d/ni9gscu+SINX7YPhPVDULMty65Lou27LVAAQ==
-length: 6727
+edSignature: ITAiRDWC6CVfhQu16NhppUCWZvHPZqpZhgW+g9tOsP7HkYHkj9t5En4i26bnf38Tgby0Q53zagKxoCbbCibnDQ==
+length: 8545
 -->
