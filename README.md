@@ -6,8 +6,6 @@ Astray connects two Macs on your local network so your existing AI conversation 
 
 **[Releases and downloads](https://github.com/walnut-computing/astray-releases/releases)** · **[Report a problem](https://github.com/walnut-computing/astray-releases/issues)**
 
-> The first public release is being prepared. Downloads will appear in Releases after Apple notarization is verified.
-
 Requires **macOS 14 or later**. One universal app supports **Apple Silicon and Intel**.
 
 ## Install

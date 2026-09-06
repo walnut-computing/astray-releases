@@ -1,13 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><!-- sparkle-sign-warning:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- sparkle-sign-warning:
 IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
---><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
-  <channel>
-    <title>Astray for Mac</title>
-    <link>https://github.com/walnut-computing/astray-releases</link>
-    <description>Signed updates for Astray.</description>
-    <language>en</language>
-  </channel>
-</rss><!-- sparkle-signatures:
-edSignature: ZX2Ty+PTftXTWOQ8j//O3oFxX8jmJ80Nm4jkaujYcmQLK3RObtWfUvJSbrSl5mrIFm0wkmeLrSzObbeW2AZ4DA==
-length: 599
+-->
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Astray for Mac</title>
+        <link>https://github.com/walnut-computing/astray-releases</link>
+        <description>Signed updates for Astray.</description>
+        <language>en</language>
+        <item>
+            <title>0.7.0</title>
+            <pubDate>Sun, 06 Sep 2026 18:54:36 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.7.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.7.0
+
+Astray connects two Macs so you can keep working in the same AI conversation while using another Mac's apps, browser, and terminal.
+
+- Automatic updates powered by Sparkle. Check for updates from the Astray menu, or manage automatic checks and downloads in Settings.
+- Updates wait for remote control and running commands to finish before restarting.
+- Native Chrome tab control with the Astray Browser Bridge extension. Set up the extension on the receiving Mac in Settings → Desktop → Chrome tabs.
+- Optional remote terminal commands. Enable Terminal commands on the receiving Mac.
+- A control activity panel shows who is connected and what they are working on. Set your display name in Settings.
+
+Requires macOS 14 or later. One universal app supports Apple Silicon and Intel.
+
+## Install
+
+1. Download `Astray-0.7.0.zip`, unzip it, and move `Astray.app` to Applications on both Macs.
+2. Open Astray on both Macs, connect on the same local network, and enter the receiving Mac's pairing code.
+3. On the requesting Mac, use Add to Codex to register the installed Applications copy, then reload the MCP server in Codex.
+
+Users of 0.6.0 or earlier must install this version manually once. Subsequent releases can update through Astray.
+
+Updating can require reconnecting the Macs and restarting an existing MCP session. macOS manages Accessibility and Screen Recording permissions on each Mac.
+
+Background input remains experimental and depends on the target app. Keep both Macs up to date for feature compatibility.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.7.0/Astray-0.7.0.zip" length="78179779" type="application/octet-stream" sparkle:edSignature="zZyOmEjJE/qDLkzJwKkaKMW/Os7Od3Ik8l/kQLatiiMajtaWpEV+HBJsHKEKVAv9NJ16djiAUoroPSPu8YsbDw=="/>
+        </item>
+    </channel>
+</rss>
+<!-- sparkle-signatures:
+edSignature: pDEyRmsktN54Umr//6wqHdxkEqaVyo3VrgLaLlmxqdKQmb+iIUUZuZTo5IOWLBVhBxYIvgaw7Bs/+WjccoyIDQ==
+length: 2928
 -->
