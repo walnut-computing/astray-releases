@@ -9,6 +9,38 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.8.0</title>
+            <pubDate>Sun, 06 Sep 2026 19:23:42 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>0.8.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.8.0
+
+Astray connects your Macs so Codex can work across them with your permission.
+
+## What changed
+
+- A first-run setup guide walks through each Mac's role, permissions, Codex integration, and pairing.
+- The home screen explains how to connect in Astray and start control in Codex. Screen previews are clearly marked as view-only.
+- Settings now groups Access, AI apps, and Updates into separate tabs. Codex setup includes an optional setup-help section.
+- File sending is explicit, with an optional connection check to try file transfer and remote interaction.
+- Control status shows the incoming controller and tracks control expiry. Fresh control stays active even if the other Mac's clock differs.
+- Sparkle continues to check for signed updates and waits for active remote work to finish before restarting Astray.
+
+## Install or update
+
+- In Astray 0.7.0 or later, choose **Astray → Check for Updates…**.
+- For a new installation or Astray 0.6.0, download `Astray-0.8.0.zip`, unzip it, and move `Astray.app` to Applications.
+- Requires macOS 14 or later. The app includes Apple Silicon and Intel binaries.
+
+This release is signed with Developer ID, notarized by Apple, and includes a stapled notarization ticket. Update metadata and downloads are also signed with Sparkle's Ed25519 key.
+
+Existing pairing and app settings are retained. macOS may ask you to review Screen Recording or Accessibility permission.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.8.0/Astray-0.8.0.zip" length="78576455" type="application/octet-stream" sparkle:edSignature="/i+CI+qTfcZFypKyK+HAyz+Wvlxxg1h52sXMGGim7zHqLyoOql2bvHCugINwHE9LgCjUn7dsLLIIcsl/q4FMBg=="/>
+        </item>
+        <item>
             <title>0.7.0</title>
             <pubDate>Sun, 06 Sep 2026 18:54:36 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -44,6 +76,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: pDEyRmsktN54Umr//6wqHdxkEqaVyo3VrgLaLlmxqdKQmb+iIUUZuZTo5IOWLBVhBxYIvgaw7Bs/+WjccoyIDQ==
-length: 2928
+edSignature: 3aRdplLIoM5mtIkUkKveHOo4RkdwOgaJVBJ8nlRO3bqj4nz/xlL200q2Sw08njiIudvFc1oCZS42HZzXJQZTAA==
+length: 5130
 -->
