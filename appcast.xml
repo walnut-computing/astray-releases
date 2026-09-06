@@ -9,6 +9,32 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.8.1</title>
+            <pubDate>Sun, 06 Sep 2026 19:33:05 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>0.8.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.8.1
+
+## What changed
+
+- Fixed ZIP packaging that could cause macOS to reject the extracted app as damaged when using some archive tools.
+- Release checks now verify app signatures and notarization after extraction with both macOS ditto and unzip.
+
+## Install or update
+
+- In Astray 0.7.0 or later, choose **Astray → Check for Updates…**.
+- For a new installation, download `Astray-0.8.1.zip`, unzip it, and move `Astray.app` to Applications. Replace the existing app instead of merging its contents.
+- Requires macOS 14 or later. The app includes Apple Silicon and Intel binaries.
+
+This release is signed with Developer ID, notarized by Apple, and includes a stapled notarization ticket. Update metadata and downloads are also signed with Sparkle's Ed25519 key.
+
+Existing pairing and app settings are retained.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.8.1/Astray-0.8.1.zip" length="78598246" type="application/octet-stream" sparkle:edSignature="1kbg25oBWqHLfIUo1wI6w4aKDfgqY0jXkFq51T9PpxYiAQgIl1nm5zMWQE0rQz3ENkCCdqGKavIUa8yNhOzxCw=="/>
+        </item>
+        <item>
             <title>0.8.0</title>
             <pubDate>Sun, 06 Sep 2026 19:23:42 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -76,6 +102,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 3aRdplLIoM5mtIkUkKveHOo4RkdwOgaJVBJ8nlRO3bqj4nz/xlL200q2Sw08njiIudvFc1oCZS42HZzXJQZTAA==
-length: 5130
+edSignature: HC8R+riXmmdQm5g+Qur+vvyH9v0vOqleFlbd6b/9d8+INUL+d/ni9gscu+SINX7YPhPVDULMty65Lou27LVAAQ==
+length: 6727
 -->
