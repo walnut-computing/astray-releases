@@ -9,6 +9,34 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.8.5</title>
+            <pubDate>Sun, 06 Sep 2026 22:41:45 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>0.8.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.8.5
+
+## What changed
+
+- Nearby Macs now appear directly on the home screen when no Macs are connected.
+- Simplified the file receipt and connection check windows, with refreshed Astray branding and more space for file contents.
+- Previous file receipt history is restored without opening a window when Astray starts. Reading a restored snapshot also keeps the receipt window hidden; explicit connection checks still open normally.
+
+## Install or update
+
+- In Astray 0.7.0 or later, choose **Astray → Check for Updates…**.
+- When updating from 0.8.2 or earlier, close Settings before choosing **Install and Relaunch**. If an update is already waiting for Astray to quit, close its open panels and choose **Astray → Quit Astray** to let the update continue.
+- For a new installation, download `Astray-0.8.5.zip`, unzip it, and move `Astray.app` to Applications. Replace the existing app instead of merging its contents.
+- Requires macOS 14 or later. The app includes Apple Silicon and Intel binaries.
+
+This release is signed with Developer ID, notarized by Apple, and includes a stapled notarization ticket. Update metadata and downloads are also signed with Sparkle's Ed25519 key.
+
+Existing pairing and app settings are retained.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.8.5/Astray-0.8.5.zip" length="78680904" type="application/octet-stream" sparkle:edSignature="2vopwHqDA81W+FGpFH5EJLz+0NnxHzy6oSde3QqJm1PwJrufXZTXY+fMslEv8XfVESVceCqM57qjwDpVY53IDg=="/>
+        </item>
+        <item>
             <title>0.8.4</title>
             <pubDate>Sun, 06 Sep 2026 22:30:56 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -186,6 +214,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: a8CgcHCadWKdIX6QuBOeRP27Kq7f43FBRV4DmoPD3NC2Hpl8txXGssB4CjnvaoKygwekChHuHQSast0jb5DUCg==
-length: 12668
+edSignature: pdpwUXCEURcgxSEm0xt7QZEXOx/uPxRxiVWSPZ9wx9yuuFV2Ye2UPTJx0+pFb1JGtVvl94jlZVd6OY2Sni3VCA==
+length: 14685
 -->
