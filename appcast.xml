@@ -9,6 +9,39 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.1</title>
+            <pubDate>Mon, 07 Sep 2026 21:04:46 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>0.12.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.1
+
+## What changed
+
+- Control leases now last 15 minutes, with the remaining time and clearer recovery guidance shown when a Mac is busy.
+- MCP shutdown and cancellation release control more reliably, including interrupted requests, lost acquisition responses and blocked output.
+- Failed releases stay tracked for retry. Stale JavaScript device handles cannot release or renew a newer session's control.
+- Control status can be checked without acquiring a lease. Connection loss and interrupted relay requests clean up control more reliably.
+
+## Install or update
+
+- Update Astray on both the controlling and receiving Macs to get all control lease improvements. An older receiving Mac keeps its existing two-minute lease duration.
+- When control sessions and commands are idle, choose **Astray → Check for Updates…**, or download `Astray-0.12.1.zip`, unzip it and replace `Astray.app` in Applications.
+- Restart external MCP clients and persistent REPL sessions after updating, refresh the computer list and acquire a new control lease.
+- Requires macOS 14 or later; includes Apple Silicon and Intel binaries.
+
+## Scope and limits
+
+- A persistent session retains control until it releases or resets the connection, or its lease expires. Finishing one command does not automatically release control.
+- A forced process kill, power loss or prolonged network interruption can still require connection cleanup or lease expiry before another session can acquire control.
+- Relay cleanup improvements require the corresponding Astray server update.
+
+Distribution uses Developer ID signing, Apple notarization and a stapled ticket. The download archive and automatic-update feed are signed with Sparkle's Ed25519 key.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.1/Astray-0.12.1.zip" length="80003352" type="application/octet-stream" sparkle:edSignature="ihdsll08q+cUya2VLBy2AaBEDp5yNqJV4v5xUAfrFzIeArqkJppjt8UAiXlQvZf411N6EzuGGCukU5rYlnWEDg=="/>
+        </item>
+        <item>
             <title>0.12.0</title>
             <pubDate>Mon, 07 Sep 2026 20:25:58 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -410,6 +443,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: pvTQ+EBYX5qD+O6Hx3NCYlbUbRjV1GrUa++f8ZE0K12bXNRB/ICtKiAwFMre2Ox2s0g83k4cpqgWV+sp6mNcCQ==
-length: 32089
+edSignature: tKS93UDWYP9qaC9nw0yZ+qMLXjHHj4S3jEN8jTMNCZDGY6+YYG1ZPNRxF+7koLrkyiBZzbaVdYcUREzJRMbPDg==
+length: 34595
 -->
