@@ -4,7 +4,7 @@ ASTRAY FOR CHROME
 
 Read a page, fill a form, or pick up a task in Chrome. Browser Bridge connects the tabs you choose to Astray on your Mac.
 
-The Chrome Web Store release is being prepared. The installation button will appear here after approval. Existing users can continue using the development extension through Astray Settings.
+Version 0.3.1 was submitted to the Chrome Web Store on September 8, 2026 and is awaiting review. It will publish automatically after approval. The Store installation button will be enabled in an Astray update after publication. Existing users can continue using the development extension through Astray Settings.
 
 ## Get connected
 
@@ -20,6 +20,14 @@ The Chrome Web Store release is being prepared. The installation button will app
 Astray can list open tab titles and URLs. For selected tabs, it can read page content, take screenshots, click, type, scroll, and navigate. Results pass through the local app and may reach your workspace and AI provider for your requested task. [Read the browser privacy policy.](https://github.com/walnut-computing/astray-releases/blob/main/docs/browser-privacy.md)
 
 ## Connection help
+
+**App versions without the Store button:** Install Astray in Applications, then run the following once in Terminal to prepare its local connection for the Store extension:
+
+```sh
+/Applications/Astray.app/Contents/MacOS/Astray --install-browser-host iipkednacffnnbnfoijgdoclecjcpmcc
+```
+
+Open Astray and enable Apps & desktop. After approval, install [Astray Browser Bridge from the Chrome Web Store](https://chromewebstore.google.com/detail/iipkednacffnnbnfoijgdoclecjcpmcc). The Store page is not available for installation while review is pending.
 
 **“Open Astray to connect”:** Open the Astray app on this Mac. In Settings, complete Chrome setup. If you moved the app, run setup again to update its local connection.
 
