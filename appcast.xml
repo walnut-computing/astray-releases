@@ -9,6 +9,40 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.10.0</title>
+            <pubDate>Mon, 07 Sep 2026 17:42:05 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>0.10.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.10.0
+
+## What changed
+
+- Computer tabs and external MCP sessions now connect through Astray's central server over authenticated WebSockets. Both Macs connect outward to the server, so they no longer need to share a local network. LAN discovery and pairing codes have been removed; there is no LAN fallback.
+- Workspace owners can copy an invitation link that opens on Astray's website. Recipients sign in with Google, confirm the account and explicitly join the workspace, then open it in the app.
+- Workspace membership and computer sharing remain separate. Joining a workspace does not share a Mac. Remote control checks membership, the owner's sharing choice and the receiving Mac's permission; disconnects, Stop and sharing revocation invalidate control without automatically replaying uncertain actions.
+- The app verifies server membership before opening a workspace from a web link and retains the requested workspace through sign-in.
+
+## Install or update
+
+- Update **both Macs** to 0.10.0 while control sessions and commands are idle, then sign in. Use the same account for your own Macs, or join a shared workspace and explicitly share the receiving Mac.
+- Choose **Astray → Check for Updates…**, or download `Astray-0.10.0.zip`, unzip it and replace the existing `Astray.app` in Applications.
+- Restart external MCP clients and persistent REPL sessions after updating. Discover the current computer list again and acquire a new control lease; old LAN identities and pairing codes no longer apply.
+- Both Macs need Internet access and a reachable Astray server. Requires macOS 14 or later; includes Apple Silicon and Intel binaries.
+
+## Verification and limits
+
+- The matching server is deployed. Its HTTPS, production authentication, backup restoration and real Google web-invitation flow were verified; the production invitation check used an existing owner accepting their own link.
+- Native tests passed (376), along with the full server suite (400 passed, one skipped) and four additional OAuth exchange checks. A local test with two isolated native engines verified server-relayed commands, files, screenshots, receipts, disconnect cleanup, Stop/Resume and sharing revocation.
+- Two physical Macs on different networks have not yet completed acceptance of this new transport. Production invitation acceptance by a new member, Intel hardware execution and broader remote-control reliability remain unverified.
+- Web sign-in sessions expire after ten minutes and are cleared by a server restart; reopen the original invitation to continue.
+
+Distribution uses Developer ID signing, Apple notarization and a stapled ticket. The download archive and automatic-update feed are signed with Sparkle's Ed25519 key.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.10.0/Astray-0.10.0.zip" length="79871947" type="application/octet-stream" sparkle:edSignature="ItFHG7C4YvCx7uXLMkbFd8W3AaHrzgkOqTKdk3qIB5qDsBMMO4GsFRmpUBS5Y7OGU5iBMujZ2CzdN8AiVqOaCA=="/>
+        </item>
+        <item>
             <title>0.9.2</title>
             <pubDate>Mon, 07 Sep 2026 16:16:13 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -312,6 +346,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: egLnVdT8BEoZLGZWHaLYEGce420wxoC+FbTrCM0O4rm8/KI8V8cZicO1k5J6iLrZDv2N00Cw7FvSR9KMlX3cDQ==
-length: 23438
+edSignature: YC+sPXOH9lmB3nl1DICZVSbtSeRUjlmHa6TB0k0BoC2gOOmfWjvyXwaBJC+25NQ/MpnZGtKTrSSYgLxPzAazBQ==
+length: 26950
 -->
