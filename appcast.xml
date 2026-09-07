@@ -9,6 +9,37 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.9.1</title>
+            <pubDate>Mon, 07 Sep 2026 14:04:54 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>17</sparkle:version>
+            <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.9.1
+
+## What changed
+
+- Astray now rejects attempts to inspect or control its own process through Accessibility. This prevents a self-inspection path that can freeze the receiving app and stall control requests. The error asks you to select another app; observing Astray requires a separate process.
+- Updated Astray's logo, app icon, menu-bar symbol and bundled Chrome extension icons.
+- Added regression coverage for native control leases. Commands missing a required lease are rejected before execution; failed or uncertain commands are not automatically retried.
+
+## Verification and limits
+
+- Tests with two real users on two physical Macs verified default-Mac execution, explicit shared-Mac execution, private draft separation, shared run locking and workspace-owner Stop. Sharing revocation reported an interrupted, unknown outcome without replaying work.
+- The paired tests ran on 0.9.0 and exposed the self-inspection problem addressed here. Full paired acceptance, general fullscreen control and broader AI reliability remain open; malformed AI tool requests can still fail.
+- Google OAuth remains in Testing. Intel binaries are included, but execution on Intel hardware has not been verified.
+
+## Install or update
+
+- Choose **Astray → Check for Updates…** on both Macs and install 0.9.1 when control sessions and commands are idle. Reconnect afterward and reload any MCP session still using the previous app process.
+- For a new installation, download `Astray-0.9.1.zip`, unzip it and move `Astray.app` to Applications. Replace the existing app instead of merging its contents.
+- Requires macOS 14 or later. Includes Apple Silicon and Intel binaries.
+
+This release uses Developer ID signing, Apple notarization and a stapled ticket. The update archive and feed are signed with Sparkle's Ed25519 key.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.9.1/Astray-0.9.1.zip" length="79878669" type="application/octet-stream" sparkle:edSignature="8tghjXScy8vRY33SPM2X5mY6s7ngC5OHW5NTYwNns9xtcZlzBSPM6RDy7izkQNWbiAt4UULTwdEBG+37+fHyAA=="/>
+        </item>
+        <item>
             <title>0.9.0</title>
             <pubDate>Mon, 07 Sep 2026 13:11:29 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -249,6 +280,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: jCbz1e5nlOQ1AXCTiXVglf8HUlpWbQqfSeJUeSCg7zpuIFzZxZHjUaKEJwbcvZZ1zKzF9SBzZWLSvfb9MYetCQ==
-length: 17979
+edSignature: 7QIncFzUUayoOr4scbrdrFuYlbi5xn7PnMDlNeIp5WMMOlAqtaMzfCTw5A6Xyf121nhilPLkfu5aHGV+U5XGAg==
+length: 20577
 -->
