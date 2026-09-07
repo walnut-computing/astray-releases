@@ -9,6 +9,38 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.9.2</title>
+            <pubDate>Mon, 07 Sep 2026 16:16:13 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>0.9.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.9.2
+
+## What changed
+
+- Changed Chat transcript layout to address a reproduced SwiftUI update loop that could leave the app unresponsive while inspecting messages and expanding tool results.
+- Deferred transcript scroll-state and floating control-panel updates until the current layout or state publication finishes. Scrolling up still pauses following, and Latest resumes it.
+- Prevented delayed commands from an ended control lease from cancelling work started under a newer lease. Old commands remain rejected and uncertain actions are not replayed.
+
+## Verification and limits
+
+- All 368 Swift tests passed on the integrated fixes. A disposable window using the real Chat view reproduced the previous hang; the changed layout completed 12 run-state transitions, 30 tool disclosures and 12 accessibility inspections.
+- Two physical Macs running 0.9.1 verified requester Chat Stop, native Mac-owner Stop, early cancellation after sharing revocation, and rejection of a separate new request to the unshared Mac. The later transcript hang was captured and retained separately from those results.
+- The layout fix still needs a paired retest after both Macs update. Long loaded transcripts can use more memory with this layout. General fullscreen control, remaining paired authentication/isolation/recovery checks and broader AI reliability remain open.
+- Google OAuth remains in Testing. Intel binaries are included; Intel hardware execution has not been verified.
+
+## Install or update
+
+- Choose **Astray → Check for Updates…** on both Macs and install 0.9.2 when control sessions and commands are idle. Reconnect afterward and reload any MCP session still using the previous app process.
+- For a new installation, download `Astray-0.9.2.zip`, unzip it and move `Astray.app` to Applications. Replace the existing app instead of merging its contents.
+- Requires macOS 14 or later. Includes Apple Silicon and Intel binaries.
+
+Public releases use Developer ID signing, Apple notarization and a stapled ticket. The update archive and feed are signed with Sparkle's Ed25519 key.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.9.2/Astray-0.9.2.zip" length="79886155" type="application/octet-stream" sparkle:edSignature="pHG7eKECd0O0a9WIyeU8ixTonJ/f/4NEDSYnTUkOpwIs/K50KVeJ0L0hE+tExQjZECflwgvYfW9qHPkQXw/1AQ=="/>
+        </item>
+        <item>
             <title>0.9.1</title>
             <pubDate>Mon, 07 Sep 2026 14:04:54 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -280,6 +312,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 7QIncFzUUayoOr4scbrdrFuYlbi5xn7PnMDlNeIp5WMMOlAqtaMzfCTw5A6Xyf121nhilPLkfu5aHGV+U5XGAg==
-length: 20577
+edSignature: egLnVdT8BEoZLGZWHaLYEGce420wxoC+FbTrCM0O4rm8/KI8V8cZicO1k5J6iLrZDv2N00Cw7FvSR9KMlX3cDQ==
+length: 23438
 -->
