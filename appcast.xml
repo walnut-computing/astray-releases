@@ -9,6 +9,34 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.4</title>
+            <pubDate>Mon, 07 Sep 2026 23:35:15 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>0.12.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.4
+
+## What changed
+
+- Choose the AI model and reasoning effort directly above the message box. Compact text menus keep the focus on your prompt and open each selection list without nested menus.
+- The model menu includes GPT-6 Astra and a wider selection of OpenRouter models. Reasoning options follow the selected model's supported levels, and Astray remembers each model's effort choice during the app session.
+- Each message uses the model and effort selected when it is sent, including subsequent tool steps in that run.
+- Server cleanup now handles disconnected sockets more reliably so interrupted runs can finish stopping and unlock the chat.
+
+## Install or update
+
+- When control sessions and commands are idle, choose **Astray → Check for Updates…**, or download `Astray-0.12.4.zip`, unzip it and replace `Astray.app` in Applications.
+- Restart external MCP clients and persistent REPL sessions after updating.
+- Requires macOS 14 or later; includes Apple Silicon and Intel binaries.
+
+Model availability and Stop cleanup depend on the corresponding Astray server update. Model and effort choices are retained during the current app session.
+
+Distribution uses Developer ID signing, Apple notarization and a stapled ticket. The download archive and automatic-update feed are signed with Sparkle's Ed25519 key.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.4/Astray-0.12.4.zip" length="80092449" type="application/octet-stream" sparkle:edSignature="cYt+QJEdrH+0fq6wI7czZQA4SwNExifBHB1KWSbI/on4N56mrZSO8qVLgPE6nIk01n6KxNXC7ztdNG3TJtfmAw=="/>
+        </item>
+        <item>
             <title>0.12.1</title>
             <pubDate>Mon, 07 Sep 2026 21:04:46 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -443,6 +471,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: tKS93UDWYP9qaC9nw0yZ+qMLXjHHj4S3jEN8jTMNCZDGY6+YYG1ZPNRxF+7koLrkyiBZzbaVdYcUREzJRMbPDg==
-length: 34595
+edSignature: +kZEHKe6yqBS6srwmBAM98TukZ9HYX+9ZYm4Gt+HO7K2JmhYtx8XFVwtTmKg+LrMqndGMnoAll9grafOMc0NDQ==
+length: 36706
 -->
