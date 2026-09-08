@@ -9,6 +9,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.13</title>
+            <pubDate>Wed, 09 Sep 2026 01:19:42 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>34</sparkle:version>
+            <sparkle:shortVersionString>0.12.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.13
+
+- Continue normal chat turns with saved JavaScript variables, functions, and app or browser handles.
+- Keep sessions available after idle periods and when switching among multiple conversations.
+- Use JavaScript reset to start fresh while leaving apps and browser tabs open.
+- Align assistant guidance with persistent sessions and improve reliability in long-running sessions.
+
+Requires macOS 14 or later. Supports Apple Silicon and Intel.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.13/Astray-0.12.13.zip" length="81207411" type="application/octet-stream" sparkle:edSignature="+g9//yAoZh0RRMkO7isYEd+K2OSt+UcRzpWwwgM5T7ixa6AZh92Uq7P9rLPZk7rNIkeN37U/TD+bvUsYH7G9Ag=="/>
+        </item>
+        <item>
             <title>0.12.12</title>
             <pubDate>Wed, 09 Sep 2026 00:58:07 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -626,6 +644,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: kmauevcqaABVj8wuqctlHUaH1e6W1LOQ/VU6JXftEmbgrs5IdR12Kx+op9f74eWRXHv3et3aHrxOox1zdQp0Aw==
-length: 48786
+edSignature: 2yOLLWp2FfrsallDtkxmwL8XI4MmSwSEbbA567L5dme77GIJ73RDRZEQLDeZa8udkaWZ/ZIRX2QZ500CgDrgBg==
+length: 50023
 -->
