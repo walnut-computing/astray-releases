@@ -9,6 +9,32 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.10</title>
+            <pubDate>Tue, 08 Sep 2026 17:41:04 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>31</sparkle:version>
+            <sparkle:shortVersionString>0.12.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.10
+
+## What changed
+
+- Profile name changes in Settings now sync to your account, chats and receiving Macs.
+- The Chat composer keeps its text wrapping stable when the window layout changes.
+- Native and Chrome control report which inputs completed when a later observation fails, helping the assistant inspect the result and continue without repeating those inputs.
+- Improves recovery after interrupted computer operations and removes unused preview and setup code.
+- Includes Astray Browser Bridge 0.3.5 with more precise action failure details.
+
+## Install or update
+
+- When control sessions and commands are idle, choose **Astray → Check for Updates…**, or download `Astray-0.12.10.zip`, unzip it and replace `Astray.app` in Applications.
+- Requires macOS 14 or later; includes Apple Silicon and Intel binaries.
+
+Distribution uses Developer ID signing, Apple notarization and a stapled ticket. The download archive and automatic-update feed are signed with Sparkle's Ed25519 key.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.10/Astray-0.12.10.zip" length="80681182" type="application/octet-stream" sparkle:edSignature="DEXJ8vmrEolGzGjg4sqCEhRKVSfAzugyvK7vFsFu5PYmooEyzjUFucOlXxaGJGqRa2B+593e3rihWV7d1e1sCQ=="/>
+        </item>
+        <item>
             <title>0.12.9</title>
             <pubDate>Tue, 08 Sep 2026 16:31:30 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -556,6 +582,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: g84U8Ts0UR3px50o5uRNjcqb+oxtp83WMOyrKRzqZVUHuhjbcdtM6KgiMC3zqqPFNmjSGxc3FqZElIFi5Nn8AA==
-length: 43851
+edSignature: GgNHF3lh8gtyqwz3EoigVQWRG2e8G7G1njMNvx6wpmHxJtHq6LJvtGV3t5UMBJktaH5/CETwizSsJky0ciUFAg==
+length: 45633
 -->
