@@ -9,6 +9,37 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.8</title>
+            <pubDate>Tue, 08 Sep 2026 16:04:31 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>29</sparkle:version>
+            <sparkle:shortVersionString>0.12.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.8
+
+## What changed
+
+- Copy an entire Chat response with its Copy button, preserving the original Markdown. Select across paragraphs, lists, quotes and code, scroll to extend the selection, and copy with Command-C or the context menu. Code blocks retain their own Copy button.
+- Selecting response text pauses automatic scrolling. The composer accepts long pasted responses without the previous layout hang; Return sends and Shift-Return inserts a new line.
+- Chrome webpage guidance now prioritizes the connected Browser Bridge, including when Chrome is on another desktop Space. Scrolling prepares page focus before the first wheel event, improving control of inactive windows.
+- The new **Show unavailable windows** setting controls whether native input may restore or activate an unavailable window. Recovery returns a fresh observation before any requested input is attempted, and per-command restrictions respect the receiving Mac's setting.
+- Browser reconnection and control-session cleanup are more reliable. Chat preserves final explanations when a run finishes after tool failures and handles window recovery more consistently.
+- Includes Astray Browser Bridge 0.3.4. Chrome Web Store availability follows its separate review and update process.
+
+## Install or update
+
+- When control sessions and commands are idle, choose **Astray → Check for Updates…**, or download `Astray-0.12.8.zip`, unzip it and replace `Astray.app` in Applications.
+- Update receiving Macs as well as the Mac sending commands. Restart external MCP clients and persistent REPL sessions after updating.
+- For an unpacked Browser Bridge loaded from the app bundle, reload the extension in Chrome after replacing the app. Store-installed extensions update through Chrome.
+- Requires macOS 14 or later; includes Apple Silicon and Intel binaries.
+
+Native window recovery can bring the selected app forward or switch desktop Spaces when enabled. The setting controls recovery of unavailable windows; Foreground input mode still activates apps normally.
+
+Distribution uses Developer ID signing, Apple notarization and a stapled ticket. The download archive and automatic-update feed are signed with Sparkle's Ed25519 key.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.8/Astray-0.12.8.zip" length="80832892" type="application/octet-stream" sparkle:edSignature="04NvTeJyLDHABIajHw/hLlSUmXMGS1HZP6ntiATapbEUApovYMQRBDMIBcQqRRpVR6gkzvPH4MnAPtQe0aUpDQ=="/>
+        </item>
+        <item>
             <title>0.12.5</title>
             <pubDate>Tue, 08 Sep 2026 11:59:37 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -501,6 +532,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: RDIb5lPxJ4R3hpnyOEWphmrWpukLJZ+gcgm52e2BjFIdNzATMZxtXJ6qzD12rZXiI/NPSVUQAwMDRs0+qgiJAQ==
-length: 39346
+edSignature: 8pGALyYr6uzBciFXwQ3ozGTqFiX05mpuXGvMi9If9HL/8PXhjCQp7ZHadddckteDev9RhioORw2AyvN0BTnmDg==
+length: 42337
 -->
