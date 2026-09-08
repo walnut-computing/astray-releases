@@ -9,6 +9,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.12</title>
+            <pubDate>Wed, 09 Sep 2026 00:58:07 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>33</sparkle:version>
+            <sparkle:shortVersionString>0.12.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.12
+
+- More reliable browser control with clearer page observations, scoped iframe queries, and responsive timeouts.
+- Improved handling of page loading, screenshots, and Stop during browser tasks.
+- Add instructions while Astray is working, and inspect the original arguments in tool details.
+- Browser Bridge 0.3.7 adds task tab groups, requested history searches, file selection, and download handling.
+
+Requires macOS 14 or later. Supports Apple Silicon and Intel. Update the companion browser extension for the new browser features.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.12/Astray-0.12.12.zip" length="81222596" type="application/octet-stream" sparkle:edSignature="GwcGeo8M6AujXbuMX19iPVkHhQyM5gBAt4Qg5wm/PsrJKcGmOGo/+9xAGzeZM/PhXvVWFw4YZryNBLk16KgxBw=="/>
+        </item>
+        <item>
             <title>0.12.11</title>
             <pubDate>Tue, 08 Sep 2026 19:06:13 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -608,6 +626,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: JR0yoKlurFs5z97cJUcSERSRKMD5i51hPZkv3uPDrTqqS0FlXfsJVDNJcbWdxfa0osd/W0CcGPt8AEqPl2VDAQ==
-length: 47456
+edSignature: kmauevcqaABVj8wuqctlHUaH1e6W1LOQ/VU6JXftEmbgrs5IdR12Kx+op9f74eWRXHv3et3aHrxOox1zdQp0Aw==
+length: 48786
 -->
