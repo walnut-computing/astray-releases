@@ -4,11 +4,11 @@ ASTRAY FOR CHROME
 
 Read a page, fill a form, or pick up a task in Chrome. Browser Bridge connects the tabs you choose to Astray on your Mac.
 
-Version 0.3.3 was submitted to the Chrome Web Store on September 8, 2026, replacing the canceled 0.3.2 review. The dashboard confirmed that it is pending review. The Store installation button will be enabled in an Astray update after publication is verified. Existing users can continue using the development extension through Astray Settings.
+Browser Bridge 0.3.7 accompanies Astray 0.12.12. The initial Chrome Web Store item is not yet publicly installable. Existing users can continue using the development extension through Astray Settings.
 
 ## Get connected
 
-**Version 0.3.3 with the matching Mac app:** install the extension and sign in to Astray on the same Mac. The connection is prepared automatically, and the popup shows your Astray account. The extension uses the Mac app's login session. Stop pauses automatic reconnection until you resume access; signing out disconnects it. The extension is pending review, and account display and automatic setup require a compatible Mac app update. The instructions below also support older companion apps.
+**With the matching Mac app:** install the extension and sign in to Astray on the same Mac. The connection is prepared automatically, and the popup shows your Astray account. The extension uses the Mac app's login session. Stop pauses automatic reconnection until you resume access; signing out disconnects it. The extension is pending review, and account display and automatic setup require a compatible Mac app update. The instructions below also support older companion apps.
 
 - **Install Astray for Mac.** Requires macOS 14 or later and Google Chrome 125 or later. Keep Astray in Applications.
 - **Prepare Chrome in Astray.** Open Settings → Chrome tabs. Astray installs the local connection used by the extension. Keep Apps & desktop enabled on the Mac whose tabs you want to use.
@@ -20,6 +20,8 @@ Version 0.3.3 was submitted to the Chrome Web Store on September 8, 2026, replac
 ## What the extension can access
 
 Astray can list open tab titles and URLs. For selected tabs, it can read page content, take screenshots, click, type, scroll, and navigate. Results pass through the local app and may reach your workspace and AI provider for your requested task. [Read the browser privacy policy.](https://github.com/walnut-computing/astray-releases/blob/main/docs/browser-privacy.md)
+
+**Version 0.3.7:** this update adds named task groups, requested recent-history lookup, stable browser identities, observed media downloads, and file-chooser input. These use Chrome's `tabGroups`, `history`, `storage`, and `downloads` permissions. When a task finishes normally, its unmarked temporary tabs close; tabs retained as deliverables or handoffs and your existing tabs stay open. Stop or reset preserves every tab and cancels unfinished downloads started by that control session. Group names and completed downloaded files may remain after control ends.
 
 ## Connection help
 

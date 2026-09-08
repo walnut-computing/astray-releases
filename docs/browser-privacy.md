@@ -2,7 +2,7 @@ ASTRAY BROWSER BRIDGE
 
 # Browser privacy.
 
-Effective September 8, 2026
+Effective September 9, 2026
 
 Astray Browser Bridge connects Chrome to the Astray app on your Mac so an assistant can work with tabs for a task you request.
 
@@ -11,9 +11,11 @@ This policy covers the Chrome extension and how browser information is passed to
 ## Information the extension handles
 
 - **Astray account display (0.3.3 and matching app):** the name and, when available, email of the account signed in to Astray on this Mac, shown in the popup to identify the connection. The app supplies this over the authenticated local native connection. The extension does not receive the app's OAuth access or refresh tokens.
-- **Tab information:** open tab identifiers, titles, and URLs, when Astray requests a tab list. This can reveal browsing activity. The extension does not read Chrome's stored browsing-history database.
+- **Tab information:** open tab identifiers, titles, and URLs, when Astray requests a tab list. This can reveal browsing activity. Version 0.3.7 also receives URLs, titles and visit times from Chrome's history API when recent history is requested for a task.
+- **Task groups:** Chrome group identifiers and titles used to organize tabs created for a task, plus temporary session ownership and deliverable/handoff marks used for normal task cleanup. Membership in a group does not make a user tab eligible for cleanup.
 - **Selected page content:** page text, accessibility and DOM information, form labels and values, links, and viewport screenshots when a task requests them. Only tabs claimed by an authorized Astray control session are inspected or controlled.
 - **Task inputs and results:** text to enter, clicks, scrolling, navigation, action results, and temporary control-session identifiers necessary to carry out the task.
+- **Files:** file paths explicitly supplied to a file chooser, and metadata and local file paths of media downloads started by the assistant. A chooser must belong to the controlled tab and current document. An unrelated user download is never assigned to the task by matching its URL or start time.
 
 Depending on the pages you choose, content and screenshots may include names, email addresses, account or authentication information visible on a page, personal communications, location information, financial information, health information, or other sensitive content. The extension does not separately request geolocation or read Chrome's cookie database or saved-password vault. Password-like values are masked in structured observations where recognized; this is not a guarantee that every sensitive detail in page content or screenshots is removed.
 
@@ -33,6 +35,10 @@ These recipients process information under their applicable service and privacy 
 ## Storage and retention
 
 The extension keeps connection state, account display information, tab claims, and temporary observations in memory while operating. It does not maintain a persistent browser-content database. Account display information is cleared when the native connection disconnects, including when the app signs out. Claims and debugger sessions are released when control is stopped or the native connection disconnects.
+
+Task-session ownership and tab marks are also kept in memory. Normal task completion closes only unmarked tabs created by that session under the same control lease. Deliverable and handoff tabs and preexisting user tabs remain open. Stop, reset, and disconnect preserve tabs and remove cleanup authority. Chrome may retain the created tabs and group names after control ends; you can rename, ungroup, or close them in Chrome.
+
+The extension stores a random extension-instance identifier in Chrome's local extension storage and opaque tab identifiers in Chrome's session storage. These support consistent browser selection and do not contain page content or login tokens. Downloaded files remain in Chrome's configured download location until you remove them. Uploading a selected file passes its content to the selected website through the browser's normal file-input flow.
 
 The companion app, requesting client, and hosted workspace may retain conversation content, task results, and command records. These records are separate from the extension, may remain after the extension is removed, and currently have no universal automatic expiration period. AI providers and connected clients apply their own retention policies. Contact the publisher below to request access to or deletion of data held by Astray; requests may require verification of the account and workspace involved. Do not email passwords or page contents with your request.
 
