@@ -9,6 +9,36 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.5</title>
+            <pubDate>Tue, 08 Sep 2026 11:59:37 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>0.12.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.5
+
+## What changed
+
+- Chat shows streamed activity, reasoning and tool results more consistently, and recovers history after reconnecting without reverting newer results.
+- Stop, cancellation and timeout handling more reliably finish cleanup, preserve partial results and distinguish commands that were never sent from commands whose outcome is unknown.
+- Model responses and tool calls handle rate limits, interrupted streams and invalid arguments more clearly, with better recovery guidance.
+- Native background input improves first-click delivery, target validation, foreground keyboard focus and menu cleanup after cancellation, timeout or window changes.
+- Browser control improves input targeting, labels, sensitive-value masking, iframe handling and coordinate clicks. Old requests are fenced off after reconnection or page changes.
+- Browser setup links to the Chrome Web Store and includes updated connection guidance. The bundled Browser Bridge is version 0.3.2; Chrome Web Store availability follows its separate review and update process.
+
+## Install or update
+
+- When control sessions and commands are idle, choose **Astray → Check for Updates…**, or download `Astray-0.12.5.zip`, unzip it and replace `Astray.app` in Applications.
+- Restart external MCP clients and persistent REPL sessions after updating. Update the Astray Browser Bridge extension when Chrome makes it available.
+- Requires macOS 14 or later; includes Apple Silicon and Intel binaries.
+
+Chat execution improvements require the corresponding Astray server update. Native popup menus can still raise their parent window above the foreground app; full background window isolation is not guaranteed.
+
+Distribution uses Developer ID signing, Apple notarization and a stapled ticket. The download archive and automatic-update feed are signed with Sparkle's Ed25519 key.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.5/Astray-0.12.5.zip" length="80627011" type="application/octet-stream" sparkle:edSignature="V8cWm8prAkOYwpZwsuGe0xUMkbt7nYJ6v1zAj3k1vkRFsPPkR/m6N4MRsCg86ys54RsXHU/jjtpBqE9Aq54OBQ=="/>
+        </item>
+        <item>
             <title>0.12.4</title>
             <pubDate>Mon, 07 Sep 2026 23:35:15 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -471,6 +501,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: +kZEHKe6yqBS6srwmBAM98TukZ9HYX+9ZYm4Gt+HO7K2JmhYtx8XFVwtTmKg+LrMqndGMnoAll9grafOMc0NDQ==
-length: 36706
+edSignature: RDIb5lPxJ4R3hpnyOEWphmrWpukLJZ+gcgm52e2BjFIdNzATMZxtXJ6qzD12rZXiI/NPSVUQAwMDRs0+qgiJAQ==
+length: 39346
 -->
