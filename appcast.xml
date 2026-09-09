@@ -9,6 +9,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.18</title>
+            <pubDate>Thu, 10 Sep 2026 03:43:42 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>39</sparkle:version>
+            <sparkle:shortVersionString>0.12.18</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.18
+
+- Organize conversations into channels and folders, with folder views and recent chats.
+- Move chats with drag and drop, rename folders and chats, and delete folders or chats.
+- Start unassigned chats from the top of the sidebar, or create a chat inside a folder.
+- See teammates at the channel, folder, or chat level as you expand the sidebar.
+- Personalize your profile with a photo or background color.
+- Enjoy a refreshed composer, welcome screen, and consistent sidebar spacing and controls.
+- Fix folder and chat creation after switching workspaces in previews.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.18/Astray-0.12.18.zip" length="84064634" type="application/octet-stream" sparkle:edSignature="icCxTA1cqbGezXjY5B+vFXj8G+6FzdoJ5p1Ai81gkwYc/WojSv+UVDxdBjrSYbMjDobESA4+UuPGLWcXbdfdAg=="/>
+        </item>
+        <item>
             <title>0.12.17</title>
             <pubDate>Wed, 09 Sep 2026 22:10:18 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -712,6 +731,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: Nirm6r7QgSxxzyuUBCy5RfmGFMRDksIEys/3+Z2sqeEF6+iqUH6yEaWAha0lCHtfEiPsgDyiEzVpbv3i9lD1CQ==
-length: 55039
+edSignature: 1KSDXSCP5tBBGh/pmNCBAlqzt8pdWz/KnAv0ptm+ckdqBwfDb4yT42G5f206QTxq5+jc5sIfhtZny6Fk+oBaCQ==
+length: 56404
 -->
