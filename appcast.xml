@@ -9,6 +9,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.14</title>
+            <pubDate>Wed, 09 Sep 2026 12:43:50 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>35</sparkle:version>
+            <sparkle:shortVersionString>0.12.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.14
+
+- Refreshed chat typography, custom icons, and workspace navigation.
+- Workspace owners can rename their workspace, with names synchronized across members.
+- Improved Markdown tables, lists, quotes, code copying, and long tool output presentation.
+- Preserved Korean input composition, drafts, text selections, and reading position during live updates.
+- Added keyboard shortcuts for chat navigation, conversation search, message input, panels, and reasoning effort.
+- Clarified tool progress, errors, and unconfirmed outcomes in the conversation history.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.14/Astray-0.12.14.zip" length="81629638" type="application/octet-stream" sparkle:edSignature="Sp/wc9AF3cPuQ1S6cR2OTayA7jXShSVtS512pqoFxj4+vHMkj4aj9nPT6X6O0nmj4A67uKcYUWvhM/bXxjYiAA=="/>
+        </item>
+        <item>
             <title>0.12.13</title>
             <pubDate>Wed, 09 Sep 2026 01:19:42 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -644,6 +662,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 2yOLLWp2FfrsallDtkxmwL8XI4MmSwSEbbA567L5dme77GIJ73RDRZEQLDeZa8udkaWZ/ZIRX2QZ500CgDrgBg==
-length: 50023
+edSignature: wm38LAeD9mrG3sVK+1JEfXzW+OxUrPS2cpFdF+HVcVdlfkjMcCrg9HV/jkDfayjSMSfjGjoS5OlaYNenokEzDg==
+length: 51376
 -->
