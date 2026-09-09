@@ -9,6 +9,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.17</title>
+            <pubDate>Wed, 09 Sep 2026 22:10:18 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>38</sparkle:version>
+            <sparkle:shortVersionString>0.12.17</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.17
+
+- Restores the workspace chat sidebar and removes the project interface introduced in 0.12.16.
+- Retains the ChatGPT model picker, conversation sharing, approval permissions, Fast mode, and refreshed menus and settings.
+- Existing workspace conversations remain available.
+
+ChatGPT mode requires an installed, signed-in Codex app. Requires macOS 14 or later; supports Apple Silicon and Intel.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.17/Astray-0.12.17.zip" length="82819579" type="application/octet-stream" sparkle:edSignature="ufMjy7Ttp0i5VbjvnuPLFGAFa5rLG1AdPsoA+XywMBcpUH7zVsZEtPu/lwBrW2aww0/J07pies9/13HJ3y0WBg=="/>
+        </item>
+        <item>
             <title>0.12.16</title>
             <pubDate>Wed, 09 Sep 2026 21:52:50 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -695,6 +712,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: tDj47lpZV+EjgAOJhtbILctG46dKtLccJ/XrZoTKOz3PJgid+wZ4bNi7MMt40Pvi6XiEqtNLlissChO63d4fAg==
-length: 53849
+edSignature: Nirm6r7QgSxxzyuUBCy5RfmGFMRDksIEys/3+Z2sqeEF6+iqUH6yEaWAha0lCHtfEiPsgDyiEzVpbv3i9lD1CQ==
+length: 55039
 -->
