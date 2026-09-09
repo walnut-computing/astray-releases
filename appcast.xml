@@ -9,6 +9,20 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.15</title>
+            <pubDate>Wed, 09 Sep 2026 13:51:49 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>36</sparkle:version>
+            <sparkle:shortVersionString>0.12.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.15
+
+- Simplified chat responses by hiding technical response status, timing, and diagnostic details in the standard Mac app.
+- Removed attention-grabbing status icons from the work summary while preserving step details and response copying.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.15/Astray-0.12.15.zip" length="81604648" type="application/octet-stream" sparkle:edSignature="xJ1pQwrQZwS2I015pV2rufud2z1dnOjzaPXA52RHHT7O0kbnv/usuNxUNTcBASmVuD4+1/bWgs9sr3ZpC0eiDg=="/>
+        </item>
+        <item>
             <title>0.12.14</title>
             <pubDate>Wed, 09 Sep 2026 12:43:50 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -662,6 +676,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: wm38LAeD9mrG3sVK+1JEfXzW+OxUrPS2cpFdF+HVcVdlfkjMcCrg9HV/jkDfayjSMSfjGjoS5OlaYNenokEzDg==
-length: 51376
+edSignature: rLum4oQS9hE2xc9O9cVo+UeYVd2a4bZ0MrSHdUQJ567hlcMGqA2AMKVpkWzjcnQq+WgtiUe3XNoxsGK5BPMiDQ==
+length: 52410
 -->
