@@ -9,6 +9,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed updates for Astray.</description>
         <language>en</language>
         <item>
+            <title>0.12.16</title>
+            <pubDate>Wed, 09 Sep 2026 21:52:50 +0900</pubDate>
+            <link>https://github.com/walnut-computing/astray-releases</link>
+            <sparkle:version>37</sparkle:version>
+            <sparkle:shortVersionString>0.12.16</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Astray 0.12.16
+
+- Connect your ChatGPT account in the model picker and use Codex models alongside Astray models.
+- Share ChatGPT conversations and tool results with your team workspace, with saved output recovery after a connection interruption.
+- Choose approval permissions, reasoning effort, and Fast mode for each ChatGPT conversation.
+- Organize workspace chats in projects, pin projects, and move chats between projects from the persistent sidebar.
+- Refreshed menus, settings, text editing controls, and conversation presentation.
+
+ChatGPT mode requires an installed, signed-in Codex app. Requires macOS 14 or later; supports Apple Silicon and Intel.
+]]></description>
+            <enclosure url="https://github.com/walnut-computing/astray-releases/releases/download/v0.12.16/Astray-0.12.16.zip" length="83593734" type="application/octet-stream" sparkle:edSignature="qy2TYcm/KUf6RXtLclyjXGE19GnLttLZpTm3eLMQpSco+zjxQVXJKWontZqsrnyrrhWAVyFEws2TBbX2wAkfBA=="/>
+        </item>
+        <item>
             <title>0.12.15</title>
             <pubDate>Wed, 09 Sep 2026 13:51:49 +0900</pubDate>
             <link>https://github.com/walnut-computing/astray-releases</link>
@@ -676,6 +695,6 @@ Background input remains experimental and depends on the target app. Keep both M
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: rLum4oQS9hE2xc9O9cVo+UeYVd2a4bZ0MrSHdUQJ567hlcMGqA2AMKVpkWzjcnQq+WgtiUe3XNoxsGK5BPMiDQ==
-length: 52410
+edSignature: tDj47lpZV+EjgAOJhtbILctG46dKtLccJ/XrZoTKOz3PJgid+wZ4bNi7MMt40Pvi6XiEqtNLlissChO63d4fAg==
+length: 53849
 -->
